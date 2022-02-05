@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+        function sub(){
+            var fn=document.getElementById('fname').value;
+            var fn1=document.getElementById('fname1').value;
+            console.log(fn);
+            document.getElementById('result').innerHTML="Area="+fn1*fn;
+            document.getElementById('result1').innerHTML="perimeter="+2*(fn1+fn);
+        }
+    </script>
+</head>
+<body>
+    <label for="fname">length<input id="fname" name="firstname"></label>
+    <label for="fname1">width<input id="fname1" name="firstname"></label>
+    <p><input type="button" id="submit" onclick="sub()" value="calculate area and perimeter"></p>
+   
+    <div id="result"></div>
+    <div id="result1"></div>
+
+</body>
+</html>
